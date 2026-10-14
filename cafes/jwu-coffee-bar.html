@@ -55,6 +55,50 @@
           </tbody>
         </table>
     </section>
+
+    <section id="suggest-place">
+  <h2>Suggest a Place</h2>
+
+  <form action="#" method="POST">
+    <fieldset>
+      <legend>Place Details</legend>
+
+      <label for="place-name">Place Name</label>
+      <input type="text" id="place-name" name="place_name" required>
+
+      <fieldset>
+        <legend>Category</legend>
+
+        <input type="radio" id="cat-food" name="category" value="food" required>
+        <label for="cat-food">Food & Drink</label>
+
+        <input type="radio" id="cat-study" name="category" value="study">
+        <label for="cat-study">Study Spot</label>
+
+        <input type="radio" id="cat-outdoors" name="category" value="outdoors">
+        <label for="cat-outdoors">Outdoors</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What's good about it?</legend>
+
+        <input type="checkbox" id="feature-affordable" name="features[]" value="affordable">
+        <label for="feature-affordable">Affordable</label>
+
+        <input type="checkbox" id="feature-wifi" name="features[]" value="good-wifi">
+        <label for="feature-wifi">Good Wi-Fi</label>
+
+        <input type="checkbox" id="feature-quiet" name="features[]" value="quiet">
+        <label for="feature-quiet">Quiet</label>
+      </fieldset>
+
+      <label for="suggester-email">Contact Email</label>
+      <input type="email" id="suggester-email" name="email" required>
+
+      <button type="submit">Suggest place</button>
+    </fieldset>
+  </form>
+</section>
 </main>
 
     <footer>
